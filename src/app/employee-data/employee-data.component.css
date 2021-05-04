@@ -1,0 +1,40 @@
+.table {
+    border-collapse: collapse;
+    margin: auto 0;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 300px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    background: white     
+}
+
+table thead tr {
+    background-color: #009879;
+    color: #ffffff;
+}  
+
+table tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+}
+
+.fa {
+    font-size: 1rem;
+}
+
+.fa.fa-eye{
+    color: orange;
+}
+  
+.fa.fa-trash{
+    color: red;
+}
+
+h1 {
+    color: #ff2f00;
+}
+
+.btn-create{
+    text-align: right;
+    padding-bottom: 2rem;
+}
