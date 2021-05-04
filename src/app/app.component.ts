@@ -17,7 +17,6 @@ export class AppComponent {
     this.empService.getData().subscribe(res => {
       this.employees = res;
       this.progressbarValue= (res.length/10)*100;
-      console.log(this.progressbarValue)
     })
   }
 }

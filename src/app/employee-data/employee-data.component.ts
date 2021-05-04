@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { EmployeeService } from '../_services/employee.service';
+import swal from 'sweetalert2';
+import { ToastrService } from 'ngx-toastr';
 
 @Component({
   selector: 'app-employee-data',
@@ -10,7 +12,8 @@ export class EmployeeDataComponent implements OnInit {
 
   public employees : any;
 
- constructor(private empService : EmployeeService) {}
+ constructor(private empService : EmployeeService,
+) {}
 
  ngOnInit() {
   this.empService.getData().subscribe(res => {
@@ -20,6 +23,7 @@ export class EmployeeDataComponent implements OnInit {
 
  deleteRecord(index :any) {
   this.empService.delete(index);
+
  }
 
 }
